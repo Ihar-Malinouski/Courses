@@ -30,14 +30,13 @@ public class TASK_4_NOT_WORK {
         int maxRange = Integer.parseInt(in.nextLine());                             // Записываем введенное значение в переменную maxRange
 
         int[] array = new int[elementArray];                                        // Обьявляем новый массив с размерностью elementArray
-        Random rnd = new Random();                                                  // Создаем обьект для генерации случайный чисел (импортируется класс java.util.Random;)
         for (int i = 0; i < array.length; i++) {                                    // Цикл для заполнения массива начиная с элемента с индексом 0
             array[i] = (int) (Math.random() * maxRange + 1);                        /* Заполняем одномерный массив случайными числами, где "maxRange"- максимальное значение
                                                                                        для одного случайного числа в массиве, "+1"- включая максимальное значение диапазона*/
         }
         System.out.println(Arrays.toString(array));                                 // Выводим в консоль значение полученного массива
-        this.array = array;                                                         // Записываем значение полученного массива в приватную переменную array
-        this.maxRange = maxRange;
+        TASK_4_NOT_WORK.array = array;                                                         // Записываем значение полученного массива в приватную переменную array
+        TASK_4_NOT_WORK.maxRange = maxRange;
     }
 
     public void maxMeaning() {                                               // Обьявляем новый метод maxMeaning
@@ -50,8 +49,8 @@ public class TASK_4_NOT_WORK {
             }
         }
         System.out.println("Наибольшее значение  " + maxMeaning + "  имеет индекс  " + maxIndex); // Выводим в консоль результат
-        this.maxIndex = maxIndex;
-        this.maxMeaning = maxMeaning;
+        TASK_4_NOT_WORK.maxIndex = maxIndex;
+        TASK_4_NOT_WORK.maxMeaning = maxMeaning;
     }
 
     public void minMeaning() {
@@ -64,8 +63,8 @@ public class TASK_4_NOT_WORK {
             }
         }
         System.out.println("Наименьшее значение  " + minMeaning + "  имеет индекс  " + minIndex); // Выводим в консоль результат
-        this.minIndex = minIndex;
-        this.minMeaning = minMeaning;
+        TASK_4_NOT_WORK.minIndex = minIndex;
+        TASK_4_NOT_WORK.minMeaning = minMeaning;
     }
 
     public void summArray() {
@@ -73,6 +72,8 @@ public class TASK_4_NOT_WORK {
         System.out.println(minIndex);
         System.out.println(maxIndex);
         System.out.println(Arrays.toString(array));
+    }
+}
        //        int sum = 0;
 //
 ////
@@ -89,9 +90,9 @@ public class TASK_4_NOT_WORK {
 //
 //            System.out.println(Arrays.toString(array));
 
-    }
 
-}
+        /* есть все данные. тебе нужно сложить все элемнты, имеющие индекс > minIndex и < maxIndex */
+
 
 
 

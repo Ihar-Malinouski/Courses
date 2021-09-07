@@ -22,14 +22,13 @@ public class TASK_2 {
         int maxRange = Integer.parseInt(in.nextLine());                             // Записываем введенное значение в переменную maxRange
 
         int[] array = new int[maxRange];                                            // Обьявляем новый массив с размерностью maxRange
-        Random rnd = new Random();                                                  // Создаем обьект для генерации случайный чисел (импортируется класс java.util.Random;)
         for (int i = 0; i < array.length; i++) {                                    // Цикл для заполнения массива начиная с элемента с индексом 0
             array[i] = (int) (Math.random() * 11);                                  /* Заполняем одномерный массив случайными числами, где "maxRange"- максимальное значение
                                                                                      для каждого случайного числа в массиве, "+11"- максимально значение 10*/
         }
         System.out.println(Arrays.toString(array));                                 // Выводим в консоль значение полученного массива
-        this.array = array;                                                         // Записываем значение полученного массива в приватную переменную array
-        this.maxRange = maxRange;                                                   // Записываем значение полученного массива в приватную переменную array
+        TASK_2.array = array;                                                         // Записываем значение полученного массива в приватную переменную array
+        TASK_2.maxRange = maxRange;                                                   // Записываем значение полученного массива в приватную переменную array
     }
 
     public void maxMeaning() {

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 //ЗАДАНИЕ: Найти сумму элементов на главной диагонали матрицы n*n. Число n вводится пользователем с клавиатуры и заполнить его «бабочкой»
 public class TASK_5_6 {
-    private static int[] array;
 
     public static void main(String[] args) {
         TASK_5_6 TASK_5_6 = new TASK_5_6();
